@@ -6,3 +6,32 @@ __pycache__/
 .git
 .gitignore
 .gitattributes
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# IDEs
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Python test/cache
+.pytest_cache/
+.coverage
+htmlcov/
+.mypy_cache/
+
+# Documentation
+README.md
+TODO.md
