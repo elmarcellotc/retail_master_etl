@@ -1,8 +1,26 @@
-# environment variables
+# Environment
 .env
+.venv/
+venv/
 
 # Input
 data_raw/
+
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Distribution
+build/
+dist/
+*.egg-info/
+
+# IDEs
+.vscode/
+.idea/
+
+# macOS
+.DS_Store
 
 # Tests content
 tests/Core Tables/*
@@ -16,7 +34,3 @@ tests/Inventory Tables/*
 
 tests/Payroll/*
 !tests/Payroll/.gitkeep
-
-# Python cache
-__pycache__/
-*.py[cod]
