@@ -16,3 +16,7 @@ tests/Inventory Tables/*
 
 tests/Payroll/*
 !tests/Payroll/.gitkeep
+
+# Python cache
+__pycache__/
+*.py[cod]
