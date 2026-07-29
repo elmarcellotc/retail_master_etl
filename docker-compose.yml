@@ -1,0 +1,29 @@
+version: '3.8'
+
+services:
+  retailetl:
+    container_name: RetailETL
+    image: docker_image_retail_etl
+    build:
+      context: .
+    networks:
+      - RetailNetwork
+    ports:
+      - "46764:3306"
+    volumes:
+      - .:/app
+    environment:
+      MYSQL_HOST: ${MYSQL_HOST}
+      MYSQL_PORT: ${MYSQL_PORT}
+      MYSQL_ETL_USER: ${MYSQL_ETL_USER}
+      MYSQL_ETL_PASSWORD: ${MYSQL_ETL_PASSWORD}
+      MYSQL_DATABASE: ${MYSQL_DATABASE}
+
+    stdin_open: true
+    tty: true
+
+networks:
+  RetailNetwork:
+    external: true
+    name: RetailNetwork
+    driver: bridge

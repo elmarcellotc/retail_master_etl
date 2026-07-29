@@ -1,0 +1,18 @@
+# environment variables
+.env
+
+# Input
+data_raw/
+
+# Tests content
+tests/Core Tables/*
+!tests/Core Tables/.gitkeep
+
+tests/Infrastructure Tables/*
+!tests/Infrastructure Tables/.gitkeep
+
+tests/Inventory Tables/*
+!tests/Inventory Tables/.gitkeep
+
+tests/Payroll/*
+!tests/Payroll/.gitkeep
